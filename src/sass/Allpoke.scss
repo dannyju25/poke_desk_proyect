@@ -1,0 +1,84 @@
+@use 'variables' as v;
+code {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .rock {
+    background-color: v.$rock;
+  }
+  .ghost {
+    background-color: v.$ghost;
+  }
+  .electric {
+    background-color: v.$electric;
+  }
+  .bug {
+    background-color: v.$bug;
+  }
+  .poison {
+    background-color: v.$poison;
+  }
+  .normal {
+    background-color: v.$normal;
+  }
+  .fairy {
+    background-color: v.$fairy;
+  }
+  .fire {
+    background-color: v.$fire;
+  }
+  .grass {
+    background-color:v.$grass;
+  }
+  .water {
+    background-color: v.$water;
+  }
+  .thumb-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0 ;
+    margin: 0.3rem;
+    border: 1px solid #efefef;
+    border-radius: 0.2rem;
+    min-width: 160px;
+    text-align: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+    cursor: pointer;
+    transition: 100ms;
+    &:active{
+        transform: translateY(4px);
+    }
+    &:hover{
+        transform: translateY(10px) ;
+    }
+  }
+  h3 {
+    margin-bottom: 0.2rem;
+  }
+  .thumb-container .number {
+    border-radius: 1rem;
+    padding: 0.2rem 0.4rem;
+    background-color: rgba(255,255,255,0.3);
+  }
+  .thumb-container img {
+    width: 120px;
+    height: 120px;
+  }
+  .thumb-container small {
+    text-transform: capitalize;
+  }
+  .poke__detalle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ }
+.poke__detalle button {
+    color: rgb(22, 22, 22);
+    padding: .5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.185);
+  }

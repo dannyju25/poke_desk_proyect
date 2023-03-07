@@ -1,0 +1,25 @@
+@use 'variables' as v;
+.button__Coments{
+    background-color: v.$color5;
+    width:  60px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 0px 2px #999,2px 2px 0px 2px #777,3px 3px 0px 2px #555,4px 4px 0px 2px #333;
+    cursor: pointer;
+    &:active{
+        transform: translateY(4px);
+    
+    }
+}
+.imput__Coments{
+    
+    width:  260px;
+    height: 60px;
+    margin: 20px 20px 20px 0px;
+}
+.comentarios{
+list-style-type:decimal;
+}
+
+

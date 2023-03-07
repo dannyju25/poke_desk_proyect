@@ -1,0 +1,88 @@
+@use 'variables' as v;
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+.app__container{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 3rem 0.5rem;
+} 
+
+.pokemon__container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.all__container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+     justify-content: center;
+    }
+
+.btncargar__mas{
+    background: v.$color5;
+    border-radius: 2px;
+    border: none;
+    color: #444;
+    padding: 0.5rem 1.5rem;
+    min-width: 50%;
+    margin-top: 1rem;
+    cursor:pointer;
+    box-shadow: 1px 1px 0px 2px #999,2px 2px 0px 2px #777,3px 3px 0px 2px #555,4px 4px 0px 2px #333;
+}
+.btn__container{
+    
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.frame__container{
+   
+    display: flex;
+    width: 600px;
+    height: 400px;
+    margin-top: 100px;
+    position: relative;
+   
+}
+  }
+.frame__container .frame:nth-child(1){
+    border: 1px solid black;
+    left: 0;
+    transition: 100ms;
+    &:hover{
+        transform: translateX(5px) translateY(8px) ;
+    }
+}
+.frame__container .frame:nth-child(2){
+    border: 1px solid black;
+    left: 150;
+    transition: 100ms;
+    &:hover{
+        transform: translateX(5px) translateY(8px) ;
+    }
+}
+.frame__container .frame:nth-child(3){
+    border: 1px solid black;
+    left: 300;
+    transition: 100ms;
+    &:hover{
+        transform: translateX(5px) translateY(8px) ;
+    }
+}
+.frame1{
+  transform: translate(200px);
+}
+.frame2{
+    transform: translate(100px);
+}

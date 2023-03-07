@@ -1,0 +1,21 @@
+@use 'variables' as v;
+.btn{
+    background-color: v.$color1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border:none;
+    cursor: pointer;
+    color: white;
+    font-size: 28px;
+    appearance: none;
+    box-shadow: 1px 1px 0px 2px #999,2px 2px 0px 2px #777,3px 3px 0px 2px #555,4px 4px 0px 2px #333;
+
+    &__box{
+        
+    }
+    &:active{
+        transform: translateY(4px);
+
+    }
+}
